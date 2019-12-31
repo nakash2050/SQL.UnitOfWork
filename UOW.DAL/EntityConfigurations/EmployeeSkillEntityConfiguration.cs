@@ -4,7 +4,7 @@ using UOW.Entities.Domain;
 
 namespace UOW.DAL.EntityConfigurations
 {
-    public class EmployeeSkillEntityConfiguration :IEntityTypeConfiguration<EmployeeSkill>
+    public class EmployeeSkillEntityConfiguration : IEntityTypeConfiguration<EmployeeSkill>
     {
         public void Configure(EntityTypeBuilder<EmployeeSkill> builder)
         {
@@ -12,6 +12,7 @@ namespace UOW.DAL.EntityConfigurations
             builder.HasKey(s => s.SkillId);
             builder.Property(s => s.SkillName).HasColumnType("VARCHAR(100)").IsRequired(true);
             builder.Property(s => s.SkillLevel).IsRequired(true);
+            builder.HasOne(s => s.Employee).WithMany(e => e.EmployeeSkills).HasForeignKey(s => s.EmployeeId);
         }
     }
 }

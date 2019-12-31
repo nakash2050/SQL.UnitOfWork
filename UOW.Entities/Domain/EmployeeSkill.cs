@@ -9,5 +9,9 @@ namespace UOW.Entities.Domain
         public string SkillName { get; set; }
 
         public Level SkillLevel { get; set; }
+
+        public Employee Employee { get; set; }
+
+        public int EmployeeId { get; set; }
     }
 }
