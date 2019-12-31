@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  sql:
+    environment:
+      SA_PASSWORD: "Secure@001"
+      ACCEPT_EULA: "Y"
+    ports:
+      - 11433:1433
+    volumes:
+      - sqldata:/var/opt/mssql
+
+  uow.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:5000
+    ports:
+      - "5000:5000"
+
+volumes:
+  sqldata:

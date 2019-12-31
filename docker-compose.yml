@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  sql:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: uow.db
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "localhost", "11433" ]
+      interval: 10s
+      timeout: 15s
+      retries: 1
+
+  uow.api:
+    image: uow.sql.api
+    container_name: uow.sql.api
+    build:
+      context: .
+      dockerfile: UOW.API/Dockerfile
+    restart: on-failure
+    depends_on:
+      - sql

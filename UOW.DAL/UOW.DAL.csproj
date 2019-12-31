@@ -21,8 +21,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UOW.Entities\UOW.Entities.csproj" />
+    <ProjectReference Include="..\UOW.Repositories\UOW.Repositories.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="EntityConfigurations\" />
+    <Folder Include="Concretes\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
 </Project>

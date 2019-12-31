@@ -11,8 +11,8 @@ namespace UOW.DAL.EntityConfigurations
             builder.ToTable("tblEmployees");
             builder.HasKey(e => e.EmployeeId);
 
-            builder.Property(e => e.FirstName).HasColumnType("VARCHAR").HasMaxLength(100);
-            builder.Property(e => e.LastName).HasColumnType("VARCHAR").HasMaxLength(100);
+            builder.Property(e => e.FirstName).HasColumnType("VARCHAR(100)");
+            builder.Property(e => e.LastName).HasColumnType("VARCHAR(100)");
         }
     }
 }

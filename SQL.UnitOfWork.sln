@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOW.Repositories", "UOW.Rep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOW.API", "UOW.API\UOW.API.csproj", "{CE41889C-9495-4F06-8C83-E38346F7BF50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOW.BAL", "UOW.BAL\UOW.BAL.csproj", "{C590950A-FEE6-4CA9-B767-BE24B1B20BE2}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D46487CF-F3AD-4757-A249-C1D1257EEEDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +35,13 @@ Global
 		{CE41889C-9495-4F06-8C83-E38346F7BF50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE41889C-9495-4F06-8C83-E38346F7BF50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE41889C-9495-4F06-8C83-E38346F7BF50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C590950A-FEE6-4CA9-B767-BE24B1B20BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C590950A-FEE6-4CA9-B767-BE24B1B20BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C590950A-FEE6-4CA9-B767-BE24B1B20BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C590950A-FEE6-4CA9-B767-BE24B1B20BE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D46487CF-F3AD-4757-A249-C1D1257EEEDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D46487CF-F3AD-4757-A249-C1D1257EEEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D46487CF-F3AD-4757-A249-C1D1257EEEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D46487CF-F3AD-4757-A249-C1D1257EEEDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

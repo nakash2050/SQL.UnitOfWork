@@ -5,9 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Concretes\" />
     <Folder Include="Contracts\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\UOW.DAL\UOW.DAL.csproj" />
     <ProjectReference Include="..\UOW.Entities\UOW.Entities.csproj" />
+    <ProjectReference Include="..\UOW.Repositories\UOW.Repositories.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
 </Project>
