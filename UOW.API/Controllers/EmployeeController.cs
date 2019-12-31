@@ -20,14 +20,14 @@ namespace UOW.API.Controllers
 
         [HttpPost]
         [ProducesResponseType(typeof(bool), (int)HttpStatusCode.OK)]
-        public async Task<IActionResult> AddNewEmployee(EmployeeDTO employeeDTO)
+        public async Task<IActionResult> AddNewEmployee(AddEmployeeDTO employeeDTO)
         {
             var response = await employeeBAL.AddNewEmployee(employeeDTO);
             return Ok(response);
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(List<EmployeeDTO>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(List<AddEmployeeDTO>), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> GetAllEmployees()
         {
             var response = await employeeBAL.GetAllEmployees();
@@ -35,7 +35,7 @@ namespace UOW.API.Controllers
         }
 
         [HttpGet("id")]
-        [ProducesResponseType(typeof(EmployeeDTO), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(AddEmployeeDTO), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> GetEmployeeById(int id)
         {
             var response = await employeeBAL.GetEmployeeById(id);

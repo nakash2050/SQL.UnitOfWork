@@ -24,7 +24,7 @@ namespace UOW.BAL.Concretes
             this.mapper = mapper;
         }
 
-        public async Task<bool> AddNewEmployee(EmployeeDTO employeeDTO)
+        public async Task<bool> AddNewEmployee(AddEmployeeDTO employeeDTO)
         {
             var result = false;
 
@@ -38,29 +38,29 @@ namespace UOW.BAL.Concretes
             return result;
         }
 
-        public async Task<List<EmployeeDTO>> GetAllEmployees()
+        public async Task<List<AddEmployeeDTO>> GetAllEmployees()
         {
-            List<EmployeeDTO> employees = null;
+            List<AddEmployeeDTO> employees = null;
 
             var employeesInDb = await employeeRepository.GetAllAsync();
 
             if (employeesInDb != null)
             {
-                employees = mapper.Map<List<EmployeeDTO>>(employeesInDb);
+                employees = mapper.Map<List<AddEmployeeDTO>>(employeesInDb);
             }
 
             return employees;
         }
 
-        public async Task<EmployeeDTO> GetEmployeeById(int id)
+        public async Task<AddEmployeeDTO> GetEmployeeById(int id)
         {
-            EmployeeDTO employee = null;
+            AddEmployeeDTO employee = null;
 
             var employeeInDb = await employeeRepository.GetByIdAsync(id);
 
             if (employeeInDb != null)
             {
-                employee = mapper.Map<EmployeeDTO>(employeeInDb);
+                employee = mapper.Map<AddEmployeeDTO>(employeeInDb);
             }
 
             return employee;

@@ -1,9 +1,7 @@
 ﻿namespace UOW.Entities.DTO
 {
-    public class EmployeeDTO
+    public class AddEmployeeDTO
     {
-        public int EmployeeId { get; set; }
-
         public string FirstName { get; set; }
 
         public string LastName { get; set; }

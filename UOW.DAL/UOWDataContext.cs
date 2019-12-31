@@ -11,11 +11,13 @@ namespace UOW.DAL
         }
 
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<EmployeeSkill> EmployeeSkills { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new EmployeeEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new EmployeeSkillEntityConfiguration());
         }
     }
 }

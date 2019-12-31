@@ -8,7 +8,8 @@ namespace UOW.API.Helpers
     {
         public AutoMapperProfile()
         {
-            CreateMap<Employee, EmployeeDTO>().ReverseMap();
+            CreateMap<AddEmployeeDTO, Employee>();
+            CreateMap<Employee, EmployeeDTO>();
         }
     }
 }

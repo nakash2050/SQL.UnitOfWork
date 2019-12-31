@@ -6,10 +6,10 @@ namespace UOW.BAL.Contracts
 {
     public interface IEmployeeBAL
     {
-        Task<bool> AddNewEmployee(EmployeeDTO employeeDTO);
+        Task<bool> AddNewEmployee(AddEmployeeDTO employeeDTO);
 
-        Task<EmployeeDTO> GetEmployeeById(int id);
+        Task<AddEmployeeDTO> GetEmployeeById(int id);
 
-        Task<List<EmployeeDTO>> GetAllEmployees();
+        Task<List<AddEmployeeDTO>> GetAllEmployees();
     }
 }
