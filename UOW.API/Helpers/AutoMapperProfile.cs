@@ -10,6 +10,8 @@ namespace UOW.API.Helpers
         {
             CreateMap<AddEmployeeDTO, Employee>();
             CreateMap<Employee, EmployeeDTO>();
+            CreateMap<Employee, AddEmployeeDTO>();
+            CreateMap<EmployeeSkill, EmployeeSkillDTO>();
         }
     }
 }
