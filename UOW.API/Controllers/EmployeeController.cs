@@ -34,7 +34,7 @@ namespace UOW.API.Controllers
             return Ok(response);
         }
 
-        [HttpGet("id")]
+        [HttpGet("{id}")]
         [ProducesResponseType(typeof(AddEmployeeDTO), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> GetEmployeeById(int id)
         {

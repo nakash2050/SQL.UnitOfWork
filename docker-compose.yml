@@ -19,3 +19,10 @@ services:
     restart: on-failure
     depends_on:
       - sql
+
+  uow.tests:
+    image: ${DOCKER_REGISTRY-}uow
+    build:
+      context: .
+      dockerfile: UOW.Tests/Dockerfile
+
