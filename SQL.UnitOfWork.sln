@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOW.BAL", "UOW.BAL\UOW.BAL.
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D46487CF-F3AD-4757-A249-C1D1257EEEDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOW.Tests", "UOW.Tests\UOW.Tests.csproj", "{6D5EEAAF-6784-4B0C-AFC6-998C020D4C8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,5 +45,9 @@ Global
 		{D46487CF-F3AD-4757-A249-C1D1257EEEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D46487CF-F3AD-4757-A249-C1D1257EEEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D46487CF-F3AD-4757-A249-C1D1257EEEDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D5EEAAF-6784-4B0C-AFC6-998C020D4C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5EEAAF-6784-4B0C-AFC6-998C020D4C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5EEAAF-6784-4B0C-AFC6-998C020D4C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5EEAAF-6784-4B0C-AFC6-998C020D4C8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
